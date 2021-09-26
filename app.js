@@ -128,7 +128,6 @@ document.addEventListener("keydown", (e) => {
     return;
   }
   const curentIndex = dataSources.indexOf(lightboxImageEl.src);
-  console.log(curentIndex);
   if (e.key === "ArrowLeft") {
     leftClick(curentIndex);
   } else if (e.key === "ArrowRight") {
