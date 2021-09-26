@@ -141,9 +141,9 @@ function leftClick(curentIndex) {
   if (nextIndex === -1) {
     nextIndex = dataSources.length - 1;
   }
-
   lightboxImageEl.src = dataSources[nextIndex];
 }
+
 function rightClick(curentIndex) {
   let nextIndex = curentIndex + 1;
   if (nextIndex === dataSources.length) {
