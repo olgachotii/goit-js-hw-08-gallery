@@ -124,6 +124,9 @@ const dataSources = galleryItems.map((galleryItem) => {
 });
 
 document.addEventListener("keydown", (e) => {
+  if (!lightboxEL.classList.contains("is-open")) {
+    return;
+  }
   const curentIndex = dataSources.indexOf(lightboxImageEl.src);
   console.log(curentIndex);
   if (e.key === "ArrowLeft") {
